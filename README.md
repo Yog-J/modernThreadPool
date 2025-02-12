@@ -1,13 +1,13 @@
 # modernThreadPool
 modern effective C++ thread pool
 
-##modernthreadpool是基于C++11的轻量级高效线程池
+## modernthreadpool是基于C++11的轻量级高效线程池
 
 具体的说，有一些线程专用于线程池和作业容器，作业动态地进入池，当存在空闲线程时，线程池从容器中获取并删除作业，然后在该线程上运行作业。
 
 当您希望最大限度地减少加载和销毁线程的时间，以及希望限制并行运行的并行作业的数量时，线程池很有帮助，例如，可以在线程池中处理耗时的事件处理程序，以使UI更具响应性。
 
-##特点：
+## 特点：
 *符合C++11标准，经测试可以在Clion2024.1.1上编译，使用的编译工具为gcc，mingw32
 *one header-only 只有一个头文件，无需编译二进制库
 *支持查询空闲线程数并动态调整线程池大小
@@ -15,7 +15,7 @@ modern effective C++ thread pool
 *使用标准c++ futures获取任何类型的返回值
 *使用标准c++ futures获得被捕获的异常
 
-##使用示例
+## 使用示例
 '''
 void first(int id) {
     std::cout << "hello from 线程 " << id << "\n";
@@ -128,4 +128,4 @@ int main() {
 
     return 0;
 }
-'''
+
