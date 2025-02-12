@@ -16,7 +16,7 @@ modern effective C++ thread pool
 *使用标准c++ futures获得被捕获的异常
 
 ## 使用示例
-'''
+```
 void first(int id) {
     std::cout << "hello from 线程 " << id << "\n";
 }
@@ -128,4 +128,4 @@ int main() {
 
     return 0;
 }
-'''
+```
